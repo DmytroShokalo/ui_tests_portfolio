@@ -13,6 +13,9 @@ Install requirements
 ```bash
 pip install -r requirements.txt
 ```
+
+For Mac M1 install webdriver and store it in /usr/local/bin/
+
 ## Running Tests (locally)
 
 To run tests, run the following command

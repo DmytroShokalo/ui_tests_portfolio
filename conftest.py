@@ -8,7 +8,7 @@ def pytest_addoption(parser):
     parser.addoption("--lang", action="store", default="en")
     parser.addoption("--headless", action="store", default="False")
     parser.addoption("--browser_name", action="store", default="chrome")
-    parser.addoption("--browser_version", action="store", default=None)
+    parser.addoption("--browser_version", action="store", default="latest")
     parser.addoption("--hub", action="store", default=None)
 
 @pytest.fixture(scope='class')

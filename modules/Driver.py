@@ -26,7 +26,7 @@ class Driver:
             driver = webdriver.Remote(command_executor=f'{hub}/wd/hub', options=options)
         else:
             service = ChromeService(executable_path=ChromeDriverManager(version=version).install())
-            #service = ChromeService(executable_path='/usr/local/bin/chromedriver')
+            #service = ChromeService(executable_path='/usr/local/bin/chromedriver') # for macos m1
             driver = webdriver.Chrome(service=service, options=options)
         driver.set_window_size(*self.WINDOW_SIZE)
         return driver
