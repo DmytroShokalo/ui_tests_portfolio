@@ -3,7 +3,7 @@ from src.pages.base_page import BasePage
 import conf_file as cfg
 
 class MenuPage:
-    def __init__(self, driver):
+    def __init__(self, driver) -> object:
         self.page = BasePage(driver)
 
     locAddRemoveElementsLnk = ''

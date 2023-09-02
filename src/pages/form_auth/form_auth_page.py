@@ -41,6 +41,7 @@ class FormAuthPage:
         self.page.wait_element_is_visible(self.locLoginBtn)
         self.page.wait_element_is_clickable(self.locLoginBtn)
         self.page.click_element(self.locLoginBtn)
+        self.page.take_full_screenshot()
 
     @step('logout')
     def logout(self):

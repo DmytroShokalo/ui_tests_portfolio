@@ -1,6 +1,10 @@
 # PROD
-BASE_API_URL = 'http://the-internet.herokuapp.com'
+import os
+
 BASE_URL = 'http://the-internet.herokuapp.com'
+
+HUB = 'http://localhost:4444'
+
 
 #
 # class AUTH:
