@@ -1,0 +1,107 @@
+{
+    "chrome": {
+        "default": "116.0",
+        "versions": {
+            "110.0": {
+                "image": "selenoid/chrome:110.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "111.0": {
+                "image": "selenoid/chrome:111.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "112.0": {
+                "image": "selenoid/chrome:112.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "113.0": {
+                "image": "selenoid/chrome:113.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "114.0": {
+                "image": "selenoid/chrome:114.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "115.0": {
+                "image": "selenoid/chrome:115.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "116.0": {
+                "image": "selenoid/chrome:116.0",
+                "port": "4444",
+                "path": "/"
+            }
+        }
+    },
+    "firefox": {
+        "default": "117.0",
+        "versions": {
+            "110.0": {
+                "image": "selenoid/firefox:110.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "111.0": {
+                "image": "selenoid/firefox:111.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "112.0": {
+                "image": "selenoid/firefox:112.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "113.0": {
+                "image": "selenoid/firefox:113.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "114.0": {
+                "image": "selenoid/firefox:114.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "115.0": {
+                "image": "selenoid/firefox:115.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "116.0": {
+                "image": "selenoid/firefox:116.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            },
+            "117.0": {
+                "image": "selenoid/firefox:117.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            }
+        }
+    },
+    "safari": {
+        "default": "15.0",
+        "versions": {
+            "13.0": {
+                "image": "browsers/safari:13.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "14.0": {
+                "image": "browsers/safari:14.0",
+                "port": "4444",
+                "path": "/"
+            },
+            "15.0": {
+                "image": "browsers/safari:15.0",
+                "port": "4444",
+                "path": "/"
+            }
+        }
+    }
+}

@@ -32,19 +32,19 @@ pytest -n 6 --dist loadscope tests/{path_to_test_folder_or_file}
 
 #### Folders
 
-| Name            | Desc                                                                                     |
-|:----------------|:-----------------------------------------------------------------------------------------|
-| `configs`       | файли кофігурацій для різних ENV (dev.py, stage.py …)                                    |
-| `modules`       | бібліотеки для роботи з різними сервісами, бібліотеками …                                |
-| `src/elements`  | page_elements для UI                                                                     |
-| `src/pages`     | page_objects для UI                                                                      |
-| `tests/`        | тести UI                                                                                 |                       |
+| Name            | Desc                                                       |
+|:----------------|:-----------------------------------------------------------|
+| `configs`       | configuration files for different ENV (dev.py, stage.py …) |
+| `modules`       | libraries for working with various services, libraries …   |
+| `src/elements`  | page_elements for UI                                       |
+| `src/pages`     | page_objects for  UI                                       |
+| `tests/`        | UI tests                                                   |                       |
 
 #### Files
 
-| Name               | Desc                                    | 
-|:-------------------|:----------------------------------------|
-| `conf_file.py`     | основний файл конфігурації              |       
-| `conftest.py`      | конфігурація pytest (опції, фікстури …) |
-| `requirements.txt` | бібліотеки необхідні для проекту        |
+| Name               | Desc                                                 | 
+|:-------------------|:-----------------------------------------------------|
+| `conf_file.py`     | main configuration file                              |       
+| `conftest.py`      | pytest configuration (options, fixtures...)              |
+| `requirements.txt` | list of libraries which are required for the project |
 

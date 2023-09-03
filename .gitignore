@@ -5,6 +5,9 @@
 /allure-report/
 /allure-results/
 
+# selenoid files
+/selenoid/cm_*
+
 # drivers log
 geckodriver.log
 
