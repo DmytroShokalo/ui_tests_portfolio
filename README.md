@@ -28,7 +28,8 @@ To run tests in parallel (used [xdist](https://pypi.org/project/pytest-xdist/)),
 pytest -n 6 --dist loadscope tests/{path_to_test_folder_or_file}
 ```
 
-To set up selenoid env, download [cm_file](https://github.com/aerokube/cm/releases) for your architecture, and run command
+To set up selenoid env, download suitable [cm_file](https://github.com/aerokube/cm/releases) in ./selenoid/ 
+And run command
 ```bash
 source /selenoid/selenoid_helper.sh
 ```
