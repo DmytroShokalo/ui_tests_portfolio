@@ -1,18 +1,22 @@
 #!/bin/sh
 
+# shellcheck disable=SC2164
+cd ./selenoid_config
+
 # Find selenoid config manager
 CM=$(ls -a cm_*)
 echo "Config Manager: $CM"
 chmod +x "$CM"
 
 # Start selenoid
-./"$CM" selenoid start --vnc
+bash "$CM" selenoid start --vnc
 
 # Get browsers.json path
-browsers_file_path=$(./"$CM" selenoid status | grep "Selenoid configuration file is" | awk '{print $NF}')
+browsers_file_path=$(bash "$CM" selenoid status | grep "Selenoid configuration file is" | awk '{print $NF}')
+echo $(cat /selenoid/browser_example.json)
 
 # Write desirable browsers into browsers.json
-echo $(cat browser_example.json) > "$browsers_file_path"
+echo $(cat selenoid/browser_example.json) > "$browsers_file_path"
 echo "$browsers_file_path"
 
 # Parse the JSON contents and extract the image paths
@@ -25,5 +29,5 @@ for image_path in $image_paths; do
 done
 
 # Reboot selenoid
-./"$CM" selenoid stop
-./"$CM" selenoid start
+bash "$CM" selenoid stop
+bash "$CM" selenoid start

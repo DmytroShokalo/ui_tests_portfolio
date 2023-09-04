@@ -42,7 +42,7 @@ class Driver:
 			capabilities = {
 				"browserName": "chrome",
 				"browserVersion": self._version,
-				"selenoid:options": {
+				"selenoid_config:options": {
 					"enableVNC": True,
 					"enableVideo": False
 				}
@@ -62,7 +62,7 @@ class Driver:
 			capabilities = {
 				"browserName": "firefox",
 				"browserVersion": self._version,
-				"selenoid:options": {
+				"selenoid_config:options": {
 					"enableVNC": True,
 					"enableVideo": False
 				}
@@ -83,7 +83,7 @@ class Driver:
 			capabilities = {
 				"browserName": "safari",
 				"browserVersion": f"{self._version}",
-				"selenoid:options": {
+				"selenoid_config:options": {
 					"enableVNC": False,
 					"enableVideo": False,
 				}

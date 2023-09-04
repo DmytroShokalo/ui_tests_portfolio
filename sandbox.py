@@ -16,5 +16,5 @@ pytest --browser_name chrome --browser_version 116.0 --hub True tests/test_js_al
 pytest --browser_name firefox --hub True --browser_version 116.0 tests/test_dropdown_list.py
 pytest --browser_name firefox --browser_version 100.0 -n 3 --dist loadscope tests/test_dropdown_list.py
 pytest --browser_name chrome --hub True --browser_version 115.0 -n 3 --dist loadscope tests/
-pytest --browser_name chrome --hub True --browser_version 110.0 -n 3 --dist loadscope tests/
+pytest --browser_name chrome --hub True --browser_version 111.0 -n 3 --dist loadscope tests/
 """
